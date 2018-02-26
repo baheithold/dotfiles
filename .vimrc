@@ -1,6 +1,44 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" vim-better-whitespace
+Plugin 'ntpeters/vim-better-whitespace'
+
+" syntastic
+Plugin 'vim-syntastic/syntastic'
+
+" supertab
+Plugin 'ervandew/supertab'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+" better-whitespace auto whitespace strip on save
+let g:strip_whitespace_on_save=1
+
+
 colorscheme slate
 syntax enable
-set nocompatible        " use vim extensions
 set number              "[same as nu] show line numbers
 set relativenumber      " Set relative numbers
 set ruler               "[same as ru] show cursor position
@@ -28,7 +66,7 @@ set tabstop=4           "[same as ts] number of spaces per tab
 set expandtab           "[same as et] use spaces instead of a tab
 set softtabstop=4       "[same as sts] number of spaces to use instead of a tab
 set smarttab            "[same as sta] <BS> deletes shiftwidth spaces from the start of a line
-syntax enable 
+syntax enable
 hi Comment  cterm=NONE  ctermfg=yellow  ctermbg=NONE
 autocmd FileType make setlocal noexpandtab
 
@@ -99,5 +137,5 @@ endf
 
 " Old stuff from into CS classes
 "map @    :!clear;rm -f a.out; g++ -Wall -g % -o a.out -lm; ./a.out
-"map #    :!clear;rm -f a.out; g++ -std=c++11 -Wall -g % -o a.out -lm; ./a.out 
+"map #    :!clear;rm -f a.out; g++ -std=c++11 -Wall -g % -o a.out -lm; ./a.out
 "map <F2> :set paste!
