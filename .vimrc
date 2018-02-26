@@ -1,4 +1,4 @@
-color slate
+colorscheme slate
 syntax enable
 set nocompatible        " use vim extensions
 set number              "[same as nu] show line numbers
@@ -33,9 +33,24 @@ hi Comment  cterm=NONE  ctermfg=yellow  ctermbg=NONE
 autocmd FileType make setlocal noexpandtab
 
 
+" Remap arrow keys
+no <up>     ddkP
+no <down>   ddp
+no <left>   Nop
+no <right>  Nop
+
+" Center movements
+nmap G Gzz
+nmap H Hzz
+nmap M Mzz
+nmap L Lzz
+
+" Inserting new line with going into insert mode
+nmap gO O<esc>j
+nmap g<C-o> o<esc>k
+
 map @    :!make clean; clear; make
 inoremap { {<CR><BS>}<Esc>ko
-
 
 " vvv Auto brace completion vvv
 inoremap ( ()<Esc>i
