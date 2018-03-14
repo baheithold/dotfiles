@@ -74,8 +74,8 @@ autocmd FileType make setlocal noexpandtab
 " Remap arrow keys
 no <up>     ddkP
 no <down>   ddp
-no <left>   Nop
-no <right>  Nop
+no <left>   <<
+no <right>  >>
 
 " Center movements
 nmap G Gzz
