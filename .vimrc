@@ -17,6 +17,9 @@ Plugin 'vim-syntastic/syntastic'
 " supertab
 Plugin 'ervandew/supertab'
 
+" cpp enhanced highlight
+Plugin 'octol/vim-cpp-enhanced-highlight'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -36,7 +39,6 @@ filetype plugin indent on    " required
 " better-whitespace auto whitespace strip on save
 let g:strip_whitespace_on_save=1
 
-
 colorscheme slate
 syntax enable
 set number              "[same as nu] show line numbers
@@ -44,7 +46,7 @@ set relativenumber      " Set relative numbers
 set ruler               "[same as ru] show cursor position
 set showmode            "[same as smd] show when in insert mode
 set lines=50 columns=90
-set colorcolumn=81
+"set colorcolumn=81
 set hidden
 set history=100
 set background=dark
