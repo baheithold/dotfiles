@@ -35,6 +35,9 @@ Plugin 'tpope/vim-surround'
 " supertab
 Plugin 'ervandew/supertab'
 
+" vim-fugitive
+Plugin 'tpope/vim-fugitive'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
