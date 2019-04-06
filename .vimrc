@@ -38,6 +38,9 @@ Plugin 'ervandew/supertab'
 " vim-fugitive
 Plugin 'tpope/vim-fugitive'
 
+" vim-skeleton
+Plugin 'noahfrederick/vim-skeleton'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -161,8 +164,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>""
+let g:UltiSnipsJumpForwardTrigger="<c-l>"
+let g:UltiSnipsJumpBackwardTrigger="<c-h>""
 
 " Old stuff from into CS classes
 "map @    :!clear;rm -f a.out; g++ -Wall -g % -o a.out -lm; ./a.out
