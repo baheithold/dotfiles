@@ -32,6 +32,9 @@ Plugin 'SirVer/ultisnips'
 " ultisnips snippets
 Plugin 'honza/vim-snippets'
 
+" vim-surround
+Plugin 'tpope/vim-surround'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
