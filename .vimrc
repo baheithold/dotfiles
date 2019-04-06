@@ -20,6 +20,18 @@ Plugin 'ervandew/supertab'
 " cpp enhanced highlight
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
+" nerdtree
+Plugin 'scrooloose/nerdtree'
+
+" nerdtree-git-plugin
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+
+" ultisnips
+Plugin 'SirVer/ultisnips'
+
+" ultisnips snippets
+Plugin 'honza/vim-snippets'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -46,7 +58,7 @@ set relativenumber      " Set relative numbers
 set ruler               "[same as ru] show cursor position
 set showmode            "[same as smd] show when in insert mode
 set lines=50 columns=90
-"set colorcolumn=81
+set colorcolumn=81
 set hidden
 set history=100
 set background=dark
@@ -136,6 +148,15 @@ function QuoteDelim(char)
 endf
 " ^^^ Auto brace completion ^^^
 
+" Nerdtree
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+" let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>""
 
 " Old stuff from into CS classes
 "map @    :!clear;rm -f a.out; g++ -Wall -g % -o a.out -lm; ./a.out
