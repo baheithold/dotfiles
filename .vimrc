@@ -14,9 +14,6 @@ Plugin 'ntpeters/vim-better-whitespace'
 " syntastic
 Plugin 'vim-syntastic/syntastic'
 
-" supertab
-Plugin 'ervandew/supertab'
-
 " cpp enhanced highlight
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
@@ -157,7 +154,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
-" let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>""
 
