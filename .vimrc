@@ -170,6 +170,9 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-l>"
 let g:UltiSnipsJumpBackwardTrigger="<c-h>""
 
+" NERDTree Settings
+let NERDTreeShowHidden=1
+
 " Old stuff from into CS classes
 "map @    :!clear;rm -f a.out; g++ -Wall -g % -o a.out -lm; ./a.out
 "map #    :!clear;rm -f a.out; g++ -std=c++11 -Wall -g % -o a.out -lm; ./a.out
